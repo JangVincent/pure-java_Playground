@@ -32,6 +32,14 @@ public class Programmer extends Person {
         this.role, this.company, this.careerYears, this.mostUseLanguage);
   }
 
+  public Person getPerson() throws Exception {
+    if (this.getFullName().equals("John Doe")) {
+      throw new Exception("Person is not defined");
+    }
+
+    return new Person(this.getFirstName(), this.getLastName());
+  }
+
   public String getMostUseLanguage() {
     return this.mostUseLanguage;
   }
