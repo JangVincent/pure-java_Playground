@@ -8,7 +8,7 @@ public class App {
 
         Person person2 = new Person("YoungJin", "Jang");
 
-        if (person2.getFirstName() == "John Doe") {
+        if (person2.getFirstName().equals("John Doe")) {
             throw new Exception("Person is not Initialized");
         }
 
@@ -18,7 +18,7 @@ public class App {
 
         console.log(prog1.getFullName());
 
-        if (prog1.getFullName() == "John Doe") {
+        if (prog1.getFullName().equals("John Doe")) {
             throw new Exception("Programmer name is not Initialized");
         }
 
@@ -28,7 +28,7 @@ public class App {
         prog1.setMostUseLanguage("Javascript/Typescript");
         prog1.setCareerYears(3);
 
-        if (prog1.getMostUseLanguage() == "Java") {
+        if (prog1.getMostUseLanguage().equals("Java")) {
             throw new Exception("Most used language is not changed");
         }
 
