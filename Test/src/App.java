@@ -1,16 +1,17 @@
 import classes.Person;
+import classes.Utils;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        Utils console = new Utils();
 
         Person person2 = new Person("YoungJin", "Jang");
-        System.out.println(person2.getFirstName() + " " + person2.getLastName());
+        console.log(person2.getFullName());
 
-
-        if(person2.getFirstName() == "John Doe") {
+        if (person2.getFirstName() == "John Doe") {
             throw new Exception("Person is not Initialized");
-        } 
+        }
 
-        System.out.println("He is John Doe");
+        console.log("He is John Doe");
     }
 }
