@@ -11,18 +11,6 @@ public class Human extends Animal {
     this.lastName = lastName;
   }
 
-  public void eat() {
-    System.out.println("I am eating with fork and knife");
-  }
-
-  public void sleep() {
-    System.out.println("I am sleeping on bed");
-  }
-
-  public void walk() {
-    System.out.println("I am walking on two legs");
-  }
-
   public void makeSound() {
     System.out.println("I am talking");
   }
