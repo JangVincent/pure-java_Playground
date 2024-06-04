@@ -13,7 +13,6 @@ public class App {
         }
 
         // For Inheritance Test
-
         Programmer prog1 = new Programmer(person2, "Java", "Backend Engineer", "CatzeLabs", 1);
 
         console.log(prog1.getFullName());
@@ -35,7 +34,6 @@ public class App {
         console.log(prog1.getFormattedIntroduction() + '\n');
 
         // Try-catch block
-
         try {
             Programmer prog2 = new Programmer(new Person(), "Java", "Backend Engineer", "CatzeLabs", 3);
             Person programmerPerson = prog2.getPerson();
