@@ -11,6 +11,10 @@ public class Animal {
     this.color = color;
   }
 
+  protected void protectedTestUpperClass() {
+    System.out.println("This is protected test method in Upper Class");
+  }
+
   public void eat() {
     System.out.println("I am eating");
   }
@@ -31,6 +35,5 @@ public class Animal {
     System.out.println("Species: " + species);
     System.out.println("Age: " + age);
     System.out.println("Color: " + color);
-    System.out.print("\n");
   }
 }

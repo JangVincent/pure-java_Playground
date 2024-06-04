@@ -15,6 +15,11 @@ public class Human extends Animal {
     System.out.println("I am talking");
   }
 
+  public void protectedTestChildClass() {
+    System.out.println("Here is Child class");
+    this.protectedTestUpperClass();
+  }
+
   public void sayFullName() {
     String fullName = new StringBuffer().append(firstName).append(" ").append(lastName).toString();
     System.out.println(fullName);
