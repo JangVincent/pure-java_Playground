@@ -11,10 +11,6 @@ public class Human extends Animal {
     this.lastName = lastName;
   }
 
-  public int getUuid() {
-    return this.uuid;
-  }
-
   public void makeSound() {
     System.out.println("I am talking");
   }

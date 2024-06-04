@@ -5,13 +5,10 @@ public class Animal {
   protected int age;
   protected String color;
 
-  protected int uuid;
-
   public Animal(String species, int age, String color) {
     this.species = species;
     this.age = age;
     this.color = color;
-    this.uuid = (int) (Math.random() * 100 + 2);
   }
 
   protected void protectedTestUpperClass() {
