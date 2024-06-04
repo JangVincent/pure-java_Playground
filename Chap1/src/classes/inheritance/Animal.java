@@ -5,6 +5,8 @@ public class Animal {
   protected int age;
   protected String color;
 
+  private String uuid;
+
   public Animal(String species, int age, String color) {
     this.species = species;
     this.age = age;
