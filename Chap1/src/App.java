@@ -21,5 +21,12 @@ public class App {
 
         testHuman.protectedTestChildClass(); // protectedTestUpperClass() 메소드 호출. 부모 클래스의 protected 메소드를 호출할 수 있음
         System.out.print("\n");
+
+        // Test : Get uuid in Human class
+        try {
+            System.out.println(testHuman.getUuid());
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 }

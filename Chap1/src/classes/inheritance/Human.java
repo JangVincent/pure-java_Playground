@@ -11,7 +11,7 @@ public class Human extends Animal {
     this.lastName = lastName;
   }
 
-  public String getUuid() {
+  public int getUuid() {
     return this.uuid;
   }
 
