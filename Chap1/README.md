@@ -1,6 +1,11 @@
-## Getting Started
+## Inheritance and Interfaces, Abstract Classes
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Inheritance
+
+### Interfaces
+
+### Abstract Classes
+
 
 ## Folder Structure
 
