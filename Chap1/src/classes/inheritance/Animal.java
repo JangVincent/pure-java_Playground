@@ -11,7 +11,7 @@ public class Animal {
     this.species = species;
     this.age = age;
     this.color = color;
-    this.uuid = (int) (Math.random() * 100 + 1);
+    this.uuid = (int) (Math.random() * 100 + 2);
   }
 
   protected void protectedTestUpperClass() {
