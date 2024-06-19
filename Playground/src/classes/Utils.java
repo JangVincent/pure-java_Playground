@@ -9,7 +9,7 @@ public class Utils {
     System.out.print(str);
   }
 
-  public <T> void logArray(int[] fibo) {
+  public void logArray(int[] fibo) {
     for (int i = 0; i < fibo.length; i++) {
       if (i == fibo.length - 1) {
         System.out.println(fibo[i]);
