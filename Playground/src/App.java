@@ -1,8 +1,10 @@
 import java.util.Scanner;
 
+import classes.Utils;
+
 public class App {
     public static void main(String[] args) throws Exception {
-
+        Utils utils = new Utils();
         // Prob 1. Get a 5 of numbers in array and print out next input value's index in
         // array
         Scanner sc = new Scanner(System.in); // Define scanner
@@ -42,15 +44,7 @@ public class App {
 
         // print input2 array
         System.out.print("input2 array : ");
-        for (int i = 0; i < input2.length; i++) {
-            if (i == input2.length - 1) {
-                System.out.print(input2[i]);
-                break;
-            }
-            System.out.print(input2[i] + ", ");
-        }
-
-        System.out.println("");
+        utils.logArray(input2);
 
         System.out.print("Enter value for find : ");
         int findValue = sc.nextInt(); // Enter value for find in array
@@ -83,7 +77,24 @@ public class App {
             }
         }
 
-        System.out.println("The number of even number in array is " + evenNumberCount + "개");
-        System.out.println("The number of odd number in array is " + oddNumberCount + "개");
+        System.out.println("The number of even number in array is " + evenNumberCount
+                + "개");
+        System.out.println("The number of odd number in array is " + oddNumberCount +
+                "개");
+
+        // ==========
+
+        // Prob4. Fibonacci sequence
+        // arr[n] = arr[n-1] + arr[n-2]
+
+        int[] fibo = new int[10]; // Init array with length 10
+        fibo[0] = 0; // Init first value
+        fibo[1] = 1; // Init second value
+
+        for (int i = 2; i < fibo.length; i++) {
+            fibo[i] = fibo[i - 1] + fibo[i - 2];
+        }
+
+        utils.logArray(fibo);
     }
 }
