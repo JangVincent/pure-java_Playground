@@ -68,7 +68,26 @@ public class App {
 
         // System.out.println("The number of " + findValue + " in array is " + count +
         // "개");
+        // ==========
 
         // Prob3 . Make a array over length 100, and count even, and odd number in array
+        int[] input3 = new int[125]; // Init array with random int value
+        for (int i = 0; i < input3.length; i++) {
+            input3[i] = (int) (Math.random() * 100);
+        }
+
+        int evenNumberCount = 0;
+        int oddNumberCount = 0;
+
+        for (int i = 0; i < input3.length; i++) {
+            if (input3[i] % 2 == 0) {
+                evenNumberCount++;
+            } else {
+                oddNumberCount++;
+            }
+        }
+
+        System.out.println("The number of even number in array is " + evenNumberCount + "개");
+        System.out.println("The number of odd number in array is " + oddNumberCount + "개");
     }
 }
