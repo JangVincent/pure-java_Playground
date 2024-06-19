@@ -39,33 +39,36 @@ public class App {
 
         // Prob 2. Make a array over length 100, and find a number's count in array
 
-        int[] input2 = new int[125]; // Init array with random int value
-        for (int i = 0; i < input2.length; i++) {
-            input2[i] = (int) (Math.random() * 100);
-        }
+        // int[] input2 = new int[125]; // Init array with random int value
+        // for (int i = 0; i < input2.length; i++) {
+        // input2[i] = (int) (Math.random() * 100);
+        // }
 
-        // print input2 array
-        System.out.print("input2 array : ");
-        for (int i = 0; i < input2.length; i++) {
-            if (i == input2.length - 1) {
-                System.out.print(input2[i]);
-                break;
-            }
-            System.out.print(input2[i] + ", ");
-        }
+        // // print input2 array
+        // System.out.print("input2 array : ");
+        // for (int i = 0; i < input2.length; i++) {
+        // if (i == input2.length - 1) {
+        // System.out.print(input2[i]);
+        // break;
+        // }
+        // System.out.print(input2[i] + ", ");
+        // }
 
-        System.out.println("");
+        // System.out.println("");
 
-        System.out.print("Enter value for find : ");
-        int findValue = sc.nextInt(); // Enter value for find in array
-        int count = 0; // Init count
+        // System.out.print("Enter value for find : ");
+        // int findValue = sc.nextInt(); // Enter value for find in array
+        // int count = 0; // Init count
 
-        for (int i = 0; i < input2.length; i++) {
-            if (input2[i] == findValue) {
-                count++;
-            }
-        }
+        // for (int i = 0; i < input2.length; i++) {
+        // if (input2[i] == findValue) {
+        // count++;
+        // }
+        // }
 
-        System.out.println("The number of " + findValue + " in array is " + count + "개");
+        // System.out.println("The number of " + findValue + " in array is " + count +
+        // "개");
+
+        // Prob3 . Make a array over length 100, and count even, and odd number in array
     }
 }
